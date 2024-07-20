@@ -1,0 +1,40 @@
+[package]
+name = "bevy_keith"
+version = "0.1.0"
+authors = ["Jerome Humbert <djeedai@gmail.com>"]
+edition = "2021"
+resolver = "2"
+description = "2D graphics library for the Bevy game engine"
+repository = "https://github.com/djeedai/bevy_rome"
+homepage = "https://github.com/djeedai/bevy_rome/tree/main/bevy_keith"
+documentation = "https://docs.rs/bevy_keith"
+keywords = ["bevy", "graphics", "2d"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+exclude = [".github"]
+
+[dependencies]
+bevy = { version = "0.14", default-features = false, features = ["bevy_asset", "bevy_core_pipeline", "bevy_render", "bevy_text", "bevy_sprite"] }
+bytemuck = { version = "1.13", features = ["derive"] }
+bitflags = "2.3"
+ab_glyph = "0.2"
+glyph_brush_layout = "0.2"
+
+[dev-dependencies]
+bevy-inspector-egui = "0.25"
+
+[[example]]
+name = "quad"
+required-features = [ "bevy/bevy_winit", "bevy/png" ]
+
+[[example]]
+name = "text"
+required-features = [ "bevy/bevy_winit", "bevy/png" ]
+
+[[example]]
+name = "ui"
+required-features = [ "bevy/bevy_winit", "bevy/png" ]
+
+[[example]]
+name = "alpha"
+required-features = [ "bevy/bevy_winit", "bevy/png" ]
