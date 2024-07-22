@@ -5,8 +5,8 @@ authors = ["Jerome Humbert <djeedai@gmail.com>"]
 edition = "2021"
 resolver = "2"
 description = "2D graphics library for the Bevy game engine"
-repository = "https://github.com/djeedai/bevy_rome"
-homepage = "https://github.com/djeedai/bevy_rome/tree/main/bevy_keith"
+repository = "https://github.com/djeedai/bevy_keith"
+homepage = "https://github.com/djeedai/bevy_keith"
 documentation = "https://docs.rs/bevy_keith"
 keywords = ["bevy", "graphics", "2d"]
 license = "MIT OR Apache-2.0"
@@ -15,7 +15,7 @@ exclude = [".github"]
 
 [dependencies]
 bevy = { version = "0.14", default-features = false, features = ["bevy_asset", "bevy_core_pipeline", "bevy_render", "bevy_text", "bevy_sprite"] }
-bytemuck = { version = "1.13", features = ["derive"] }
+bytemuck = { version = "1", features = ["derive"] }
 bitflags = "2.3"
 ab_glyph = "0.2"
 glyph_brush_layout = "0.2"
