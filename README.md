@@ -9,7 +9,7 @@
 
 The library uses a custom Signed Distance Field (SDF) renderer, enabling anti-aliased shapes of any scale with very few draw calls (typically, single draw call per canvas). The pipeline renders at physical resolution even with high DPI, for crisp details.
 
-![Preview of canvas drawing with bevy_keith](./media/button.gif)
+![Preview of canvas drawing with bevy_keith](./media/demo.gif)
 
 ## Usage
 
